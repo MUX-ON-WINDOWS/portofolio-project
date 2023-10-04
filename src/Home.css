@@ -1,0 +1,54 @@
+:root {
+    --primary: #D3AE87;
+    --secundary: black;
+}
+
+.containerPhoneScreen {
+    display: none;
+}
+.containerContent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.contentItem {
+    transition: 0.5s;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: var(--primary);
+    border-radius: 25%;
+}
+.contentItem:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.contentItem img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25%;
+}
+.contentItem p {
+    position: absolute;;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--secundary);
+    margin-top: -60px;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .containerWindow {
+        display: block;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .containerWindow {
+        display: none;
+    }
+    .containerPhoneScreen {
+        display: block;
+    }
+  }

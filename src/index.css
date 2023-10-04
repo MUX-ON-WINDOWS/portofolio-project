@@ -1,0 +1,71 @@
+:root {
+  --primary: #D3AE87;
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: black;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+}
+
+.navContainer {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  text-decoration: none;
+  color: var(--primary);
+}
+.navItem {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+.hamburgerMenu {
+  display: none;
+  height: 30px;
+  width: 30px;
+  stroke: var(--primary);
+  stroke-width: 2;
+}
+.hamburgerContent {
+  height: 200px;
+  width: 100%;
+  display: none;
+  top: 200px;
+}
+a.hamburgerContent {
+  text-decoration: none;
+  color: inherit;
+}
+.open {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+
+  .navItem {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .navItem {
+    display: none;
+  }
+  .hamburgerMenu {
+    display: block;
+  }
+}
