@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div className='containerWindow'>
-      <h1>Home window</h1>
+      <h1 className='name'>MAX ARNOUTS</h1>
       <Swiper
         slidesPerView={3}
         spaceBetween={30}

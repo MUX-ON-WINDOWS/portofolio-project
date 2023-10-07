@@ -63,7 +63,24 @@
     color: var(--secundary);
     width: 100%;
 }
+.name {
+    position: absolute;
+    font-size: clamp(8rem, 12vw, 20rem);
+    width: 100%;
+    top: 0;
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    text-align: center;
+}
 
+.mySwiper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: 11%;
+    z-index: 10 !important;
+}
 /* mobile responsive */
 @media screen and (max-width: 930px) {
     .containerWindow {
