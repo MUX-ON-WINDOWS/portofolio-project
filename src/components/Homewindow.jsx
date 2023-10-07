@@ -11,12 +11,13 @@ import CRUDImage from '../img/CRUDicons.png';
 import { NavLink } from 'react-router-dom';
 
 function App() {
+  const backgroundColor = { background: '#20176A' };
   const data = [
-    { to: '/spaceweek', text: 'Space week', url: spaceweekImage, color: { color: 'white' } },
-    { to: '/sprint1', text: 'Sprint 1', url: AiHelpdeskImages, color: { color: 'white' } },
-    { to: '/sprint2', text: 'Sprint 2', url: AiHelpdeskImages, color: { color: 'white' } },
-    { to: '/sprint3', text: 'Sprint 3', url: AiHelpdeskImages, color: { color: 'white' } },
-    { to: '/CRUD', text: 'CRUD', url: CRUDImage, color: { color: 'white' } },
+    { to: '/spaceweek', text: 'Space week', url: spaceweekImage, color: { color: 'white' }, background: { background: backgroundColor } },
+    { to: '/sprint1', text: 'Sprint 1', url: AiHelpdeskImages, color: { color: 'white' }, background: { background: backgroundColor } },
+    { to: '/sprint2', text: 'Sprint 2', url: AiHelpdeskImages, color: { color: 'white' }, background: { background: backgroundColor } },
+    { to: '/sprint3', text: 'Sprint 3', url: AiHelpdeskImages, color: { color: 'white' }, background: { background: backgroundColor } },
+    { to: '/CRUD', text: 'CRUD', url: CRUDImage, color: { color: 'white' }, background: { background: backgroundColor } },
   ];
 
   return (
@@ -33,10 +34,10 @@ function App() {
       >
         {data.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className='card'>
+            <div className='card' style={item.background}>
               <NavLink to={item.to}>
                 <img src={item.url} alt={item.text} />
-                <h1>{item.text}</h1>
+                <h1 style={item.color}>{item.text}</h1>
               </NavLink>
             </div>
           </SwiperSlide>
