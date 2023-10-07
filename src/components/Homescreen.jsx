@@ -1,51 +1,34 @@
-import { Routes, Route, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import '../Home.css';
-import Spaceweek from '../content/Spaceweek';
-import CRUD from '../content/CRUD.jsx';
-import Home from '../components/Homewindow';
+import spaceweekImage from '../img/Spaceweek.png';
+import AiHelpdesk from '../img/AiHelpdesk.png';
+import CRUDImage from '../img/CRUDicons.png';
 
-function App() {
+function MobileView() {
+  const data = [
+    { to: '/spaceweek', text: 'Space week', url: spaceweekImage, color: { color: 'white' } },
+    { to: '/sprint1', text: 'Sprint 1', url: AiHelpdesk, color: { color: 'white' } },
+    { to: '/sprint2', text: 'Sprint 2', url: AiHelpdesk, color: { color: 'white' } },
+    { to: '/sprint3', text: 'Sprint 3', url: AiHelpdesk, color: { color: 'white' } },
+    { to: '/CRUD', text: 'CRUD', url: CRUDImage, color: { color: 'white' } },
+  ];
   return (
     <div className='containerPhoneScreen'>
       <div className='containerContent'>
-        <NavLink to="/spaceweek">
-          <div className='contentItem'>
-            <img src='https://plus.unsplash.com/premium_photo-1683910718710-2ec6b444d456?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80'/>
-            <p>Space week</p>
-          </div>
-        </NavLink>
-        <NavLink to="/sprint1">
-          <div className='contentItem'>
-            <img src='https://plus.unsplash.com/premium_photo-1683910718710-2ec6b444d456?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80'/>
-            <p>Sprint 1</p>
-          </div>
-        </NavLink>
-        <NavLink to="/sprint2">
-          <div className='contentItem'>
-            <img src='https://plus.unsplash.com/premium_photo-1683910718710-2ec6b444d456?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80'/>
-            <p>Sprint 2</p>
-          </div>
-        </NavLink>
-        <NavLink to="/sprint3">
-          <div className='contentItem'>
-            <img src='https://plus.unsplash.com/premium_photo-1683910718710-2ec6b444d456?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80'/>
-            <p>Sprint 3</p>
-          </div>
-        </NavLink>
-        <NavLink to="/CRUD">
-          <div className='contentItem'>
-            <img src='https://plus.unsplash.com/premium_photo-1683910718710-2ec6b444d456?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80'/>
-            <p>CRUD (eigen project)</p>
-          </div>
-        </NavLink>
+        {data.map((link, index) => (
+          <NavLink key={index} to={link.to}>
+            <div className='contentItem'>
+              <img
+                src={link.url}
+                alt={link.text}
+              />
+              <p style={link.color}>{link.text}</p>
+            </div>
+          </NavLink>
+        ))}
       </div>
-      <Routes>
-        <Route path="/spaceweek" element={<Spaceweek />} />
-        <Route path="/CRUD" element={<CRUD />} />
-        <Route path="/*" element={<Home />} />
-      </Routes>
     </div>
   );
 }
 
-export default App;
+export default MobileView;

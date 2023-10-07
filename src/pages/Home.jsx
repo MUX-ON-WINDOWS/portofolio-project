@@ -5,8 +5,8 @@ import '../Home.css';
 function App() {
     return (
       <>
-            <HomePhoneScreen />
-            <HomeWindowScreen />
+      <HomePhoneScreen />
+      <HomeWindowScreen />
       </>
     )
   }

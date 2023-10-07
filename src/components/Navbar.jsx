@@ -1,6 +1,11 @@
 import { Routes, Route, NavLink } from "react-router-dom";
 import Leeruitkomsten from "../pages/Leeruitkomsten";
 import Home from "../pages/Home";
+import Spaceweek from "../content/Spaceweek";
+import CRUD from "../content/CRUD";
+import Sprint1 from "../content/Sprint1";
+import Sprint2 from "../content/Sprint2";
+import Sprint3 from "../content/Sprint3";
 
 function Navbar() {
     function openHamburger() {
@@ -23,15 +28,20 @@ function Navbar() {
           </svg>
         </div>
         <NavLink className="navItem" to="/">Home</NavLink>
-        <NavLink className="navItem" to="leeruitkomsten">Leeruitkomsten</NavLink>
+        <NavLink className="navItem" to="/leeruitkomsten">Leeruitkomsten</NavLink> {/* Use absolute path */}
       </div>
-        <div className="hamburgerContent">
-            <NavLink className="navItemHamburger" to="/">Home</NavLink>
-            <NavLink className="navItemHamburger" to="leeruitkomsten">Leeruitkomsten</NavLink>
-        </div>
+      <div className="hamburgerContent">
+        <NavLink className="navItemHamburger" to="/">Home</NavLink>
+        <NavLink className="navItemHamburger" to="/leeruitkomsten">Leeruitkomsten</NavLink> {/* Use absolute path */}
+      </div>
       <Routes>
-          <Route path='' element={<Home />} />
-          <Route path="leeruitkomsten" element={<Leeruitkomsten />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/leeruitkomsten" element={<Leeruitkomsten />} />
+        <Route path="/spaceweek" element={<Spaceweek />} />
+        <Route path="/CRUD" element={<CRUD />} />
+        <Route path="/sprint1" element={<Sprint1 />} />
+        <Route path="/sprint2" element={<Sprint2 />} />
+        <Route path="/sprint3" element={<Sprint3 />} />
       </Routes>
     </>
   )
