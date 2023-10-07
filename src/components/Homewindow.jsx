@@ -1,14 +1,49 @@
+import React from 'react';
 import '../Home.css';
-
-
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
+// images import
+import spaceweekImage from '../img/Spaceweek.png';
+import AiHelpdeskImages from '../img/AiHelpdesk.png';
+import CRUDImage from '../img/CRUDicons.png';
+import { NavLink } from 'react-router-dom';
 
 function App() {
+  const data = [
+    { to: '/spaceweek', text: 'Space week', url: spaceweekImage, color: { color: 'white' } },
+    { to: '/sprint1', text: 'Sprint 1', url: AiHelpdeskImages, color: { color: 'white' } },
+    { to: '/sprint2', text: 'Sprint 2', url: AiHelpdeskImages, color: { color: 'white' } },
+    { to: '/sprint3', text: 'Sprint 3', url: AiHelpdeskImages, color: { color: 'white' } },
+    { to: '/CRUD', text: 'CRUD', url: CRUDImage, color: { color: 'white' } },
+  ];
+
   return (
     <div className='containerWindow'>
-
-        <h1>Home window </h1>
+      <h1>Home window</h1>
+      <Swiper
+        slidesPerView={3}
+        spaceBetween={30}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
+        {data.map((item, index) => (
+          <SwiperSlide key={index}>
+            <div className='card'>
+              <NavLink to={item.to}>
+                <img src={item.url} alt={item.text} />
+                <h1>{item.text}</h1>
+              </NavLink>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
