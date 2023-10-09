@@ -14,7 +14,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-
 }
 
 .navContainer {
@@ -40,6 +39,9 @@
   width: 30px;
   stroke: var(--primary);
   stroke-width: 2;
+}
+.hamburgerMenu:hover {
+  cursor: pointer;
 }
 .hamburgerContent {
   height: 200px;
