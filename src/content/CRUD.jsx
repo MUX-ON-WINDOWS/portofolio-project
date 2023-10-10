@@ -5,7 +5,7 @@ function App() {
         <div className="inleidingContainer">
           <h2>Inleiding</h2>
           <p>
-            In dit project heb een eigen CRUD applicatie gemaakt. Dit heb ik gedaan in het framework React + Vite.
+            In dit project heb een eigen CRUD applicatie gemaakt. Dit heb ik gedaan in het framework React + Vite. Mijn code van dit project is te vinden op <a href="https://git.fhict.nl/I507258/todolistv2">GitLab</a>.
           </p>
         </div>
         <div className="textContainer">
