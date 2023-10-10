@@ -56,26 +56,14 @@ a.hamburgerContent {
 .open {
   display: block;
 }
-@media screen and (max-width: 930px) {
-  .navItem {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-  }
-}
-@media screen and (max-width: 930px) {
-  .navItem {
-    display: none;
-  }
-  .hamburgerMenu {
-    display: block;
-  }
-}
 /* navbar einde */
 /* content layout */
 .contentContainer {
   background-color: var(--primary);
   color: black;
-  height: 100vh
+  height: 100%;
+  min-height: 90vh;
+  padding-bottom: 30px;
 }
 .contentContainer h1 {
   padding: 50px;
@@ -97,4 +85,28 @@ a.hamburgerContent {
 .textContainer a {
   text-decoration: none;
   color: blue;
+}
+.containerTextImage {
+  display: flex;
+}
+.containerPoster {
+  width: 700px;
+}
+
+@media screen and (max-width: 930px) {
+  .navItem {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+@media screen and (max-width: 930px) {
+  .navItem {
+    display: none;
+  }
+  .hamburgerMenu {
+    display: block;
+  }
+  .containerPoster {
+    display: none;
+  }
 }
