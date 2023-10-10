@@ -15,7 +15,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
+/* navbar begin */
 .navContainer {
   font-size: 1.5rem;
   font-weight: 400;
@@ -69,4 +69,32 @@ a.hamburgerContent {
   .hamburgerMenu {
     display: block;
   }
+}
+/* navbar einde */
+/* content layout */
+.contentContainer {
+  background-color: var(--primary);
+  color: black;
+  height: 100vh
+}
+.contentContainer h1 {
+  padding: 50px;
+  text-align: center;
+}
+.inleidingContainer {
+  margin: auto;
+  width: 80%;
+}
+.inleidingContainer a {
+  text-decoration: none;
+  color: blue;
+}
+
+.textContainer {
+  margin: auto;
+  width: 80%;
+}
+.textContainer a {
+  text-decoration: none;
+  color: blue;
 }
