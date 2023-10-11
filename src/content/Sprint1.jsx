@@ -1,3 +1,7 @@
+import Bart from '../img/Bart.png'
+import Lilian from '../img/Lilian.png'
+import Paul from '../img/Paul.png'
+
 function App() {
   return (
     <div className="contentContainer">
@@ -15,9 +19,13 @@ function App() {
         </p>
         <h2>Persona's</h2>
         <p>
-
+          Na de debriefing en een onderzoek over een doelgroep bij de mediamarkt heb ik met Stijn <a href='https://drive.google.com/drive/folders/1ZwE8jpYSzGZb_CXzPj_RBrSKAGLxL_py?usp=sharing'>3 persona's  </a> opgesteld.
         </p>
-
+        <div className='ImageContainer'>
+          <img src={Bart}></img>
+          <img src={Lilian}></img>
+          <img src={Paul}></img>
+        </div>
         <h2>Enquête online problemen</h2>
         <p>
           Om meer duidelijkheid te krijgen over onze doelgroep en de online problemen waarmee deze doelgroep te maken heeft,

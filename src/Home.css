@@ -82,6 +82,12 @@
     margin-top: 11%;
     z-index: 10 !important;
 }
+.ImageContainer {
+    display: flex;
+}
+.ImageContainer img {
+    width: 33%;
+}
 /* mobile responsive */
 @media screen and (max-width: 930px) {
     .containerWindow {
@@ -94,5 +100,8 @@
     }
     .containerPhoneScreen {
         display: block;
+    }
+    .ImageContainer {
+        display: none;
     }
   }
