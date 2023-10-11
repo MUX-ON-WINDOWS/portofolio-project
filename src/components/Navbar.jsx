@@ -28,11 +28,13 @@ function Navbar() {
           </svg>
         </div>
         <NavLink className="navItem" to="/">Home</NavLink>
-        <NavLink className="navItem" to="/leeruitkomsten">Leeruitkomsten</NavLink> {/* Use absolute path */}
+        <NavLink className="navItem" to="/leeruitkomsten">Leeruitkomsten</NavLink>
       </div>
       <div className="hamburgerContent">
-        <NavLink className="navItemHamburger" to="/">Home</NavLink>
-        <NavLink className="navItemHamburger" to="/leeruitkomsten">Leeruitkomsten</NavLink> {/* Use absolute path */}
+        <div className="navHamContainer">
+          <NavLink className="navItemHamburger" to="/">Home</NavLink>
+          <NavLink className="navItemHamburger" to="/leeruitkomsten">Leeruitkomsten</NavLink>
+        </div>
       </div>
       <Routes>
         <Route path="/" element={<Home />} />
