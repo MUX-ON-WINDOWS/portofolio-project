@@ -41,9 +41,9 @@ function Navbar() {
         <Route path="/leeruitkomsten" element={<Leeruitkomsten />} />
         <Route path="/spaceweek" element={<Spaceweek />} />
         <Route path="/CRUD" element={<CRUD />} />
-        <Route path="/sprint1" element={<Sprint1 />} />
-        <Route path="/sprint2" element={<Sprint2 />} />
-        <Route path="/sprint3" element={<Sprint3 />} />
+        <Route path="/Discover" element={<Sprint1 />} />
+        <Route path="/Define" element={<Sprint2 />} />
+        <Route path="/Develop" element={<Sprint3 />} />
       </Routes>
     </>
   )

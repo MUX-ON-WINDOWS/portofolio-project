@@ -6,11 +6,11 @@ import CRUDImage from '../img/CRUDicons.png';
 
 function MobileView() {
   const data = [
-    { to: '/spaceweek', text: 'Space week', url: spaceweekImage, color: { color: 'white' } },
-    { to: '/sprint1', text: 'Sprint 1', url: AiHelpdesk, color: { color: 'white' } },
-    { to: '/sprint2', text: 'Sprint 2', url: AiHelpdesk, color: { color: 'white' } },
-    { to: '/sprint3', text: 'Sprint 3', url: AiHelpdesk, color: { color: 'white' } },
-    { to: '/CRUD', text: 'CRUD', url: CRUDImage, color: { color: 'white' } },
+    { to: '/spaceweek', text: 'Out of space', url: spaceweekImage, color: { color: 'white' }},
+    { to: '/CRUD', text: 'CRUD', url: CRUDImage, color: { color: 'white' }},
+    { to: '/Discover', text: 'Discover', url: AiHelpdesk, color: { color: 'white' }},
+    { to: '/Define', text: 'Define', url: AiHelpdesk, color: { color: 'white' }},
+    { to: '/Develop', text: 'Develop', url: AiHelpdesk, color: { color: 'white' }},
   ];
   return (
     <div className='containerPhoneScreen'>

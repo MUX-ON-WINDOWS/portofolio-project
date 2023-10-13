@@ -13,11 +13,11 @@ import { NavLink } from 'react-router-dom';
 function App() {
   const backgroundColor = { background: '#20176A' };
   const data = [
-    { to: '/spaceweek', text: 'Space week', url: spaceweekImage, color: { color: 'white' }, background: { background: backgroundColor } },
-    { to: '/sprint1', text: 'Sprint 1', url: AiHelpdeskImages, color: { color: 'white' }, background: { background: backgroundColor } },
-    { to: '/sprint2', text: 'Sprint 2', url: AiHelpdeskImages, color: { color: 'white' }, background: { background: backgroundColor } },
-    { to: '/sprint3', text: 'Sprint 3', url: AiHelpdeskImages, color: { color: 'white' }, background: { background: backgroundColor } },
+    { to: '/spaceweek', text: 'Out of space', url: spaceweekImage, color: { color: 'white' }, background: { background: backgroundColor } },
     { to: '/CRUD', text: 'CRUD', url: CRUDImage, color: { color: 'white' }, background: { background: backgroundColor } },
+    { to: '/Discover', text: 'Discover', url: AiHelpdeskImages, color: { color: 'white' }, background: { background: backgroundColor } },
+    { to: '/Define', text: 'Define', url: AiHelpdeskImages, color: { color: 'white' }, background: { background: backgroundColor } },
+    { to: '/Develop', text: 'Develop', url: AiHelpdeskImages, color: { color: 'white' }, background: { background: backgroundColor } },
   ];
 
   return (
