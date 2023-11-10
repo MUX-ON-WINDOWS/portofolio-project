@@ -1,5 +1,10 @@
 import React from 'react';
 import '../Home.css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Pagination, Navigation } from 'swiper/modules';
 // images import
 import spaceweekImage from '../img/Spaceweek.png';
 import AiHelpdeskImages from '../img/AiHelpdesk.png';
@@ -20,16 +25,27 @@ function App() {
   return (
     <div className='containerWindow'>
       <h1 className='name'>MAX ARNOUTS</h1>
-      <div className='containerCards'>
+      <Swiper
+        slidesPerView={4}
+        spaceBetween={90}
+        pagination={{
+          clickable: true
+        }}
+        navigation={true}
+        modules={[Pagination, Navigation]}
+        className="mySwiper"
+      >
         {data.map((item, index) => (
-          <div className='card' style={item.background}>
-            <NavLink to={item.to}>
-              <img src={item.url} alt={item.text} />
-              <h1 style={item.color}>{item.text}</h1>
-            </NavLink>
-          </div>
+          <SwiperSlide key={index}>
+            <div className='card' style={item.background}>
+              <NavLink to={item.to}>
+                <img src={item.url} alt={item.text} />
+                <h1 style={item.color}>{item.text}</h1>
+              </NavLink>
+            </div>
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
     </div>
   );
 }
