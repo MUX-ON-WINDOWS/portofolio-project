@@ -7,27 +7,36 @@
     display: block;
     width: 100%;
 }
+
 .dotLine {
     border: dashed 10px var(--primary);
     width: 150px;
     height: 0px;
 }
+
 /* Leeruitkomsten  */
 .containerLeeruitkomst1 {
     display: flex;
     width: 100%;
+    margin-bottom: 20px;
 }
+
 .containerLeeruitkomst2 {
     display: flex;
     width: 100%;
+    margin-bottom: 20px;
 }
+
 .containerLeeruitkomst3 {
     display: flex;
     width: 100%;
+    margin-bottom: 20px;
 }
+
 .containerLeeruitkomst4 {
     display: flex;
     width: 100%;
+    margin-bottom: 20px;
 }
 
 /* Bewijslasten */
@@ -36,14 +45,15 @@
     height: 100%;
     border-radius: 30px;
     padding: 30px;
-    margin: 10px;
+    margin: auto;
     background-color: var(--primary);
     color: var(--color);
 }
-.leeruitkomst{
+
+.leeruitkomst {
     border-radius: 30px;
-    padding: 30px;
-    margin: 10px;
+    padding: 40px;
+    margin: auto;
     max-height: 300px;
     height: 100%;
     width: 404px;
@@ -56,24 +66,33 @@
     border: dashed 10px white;
     width: 150px;
     height: 0px;
-  }
+}
+
 .border2 {
     border: dashed 10px #D3AE87;
     width: 150px;
     height: 0px;
 }
-.dotLine, .border2 {
+
+.dotLine,
+.border2 {
     margin-top: 120px;
 }
 
 .ContainerAlleLeeruitkomstenPhone {
     display: none;
 }
+
 .leeruitkomstPhone {
     background-color: var(--primary);
 }
+
 .leeruitkomstPhone h1 {
     text-align: center;
+}
+
+.content_container_margin a {
+    color: blue !important;
 }
 
 /* Media Queries */
@@ -81,7 +100,8 @@
     .ContainerAlleLeeruitkomsten {
         display: none;
     }
+
     .ContainerAlleLeeruitkomstenPhone {
         display: block;
     }
-  }
+}

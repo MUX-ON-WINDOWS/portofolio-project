@@ -14,7 +14,7 @@ function App() {
             <div className='content_container_margin'>
               <h3>Bewijs:</h3>
               <ul>
-               
+
               </ul>
             </div>
           </div>
@@ -25,18 +25,22 @@ function App() {
             <div className='content_container_margin'>
               <h3>Bewijs:</h3>
               <ul>
-                
+                <li><a href="https://github.com/MUX-ON-WINDOWS/portofolio-project">Git portofolio</a></li>
+                <li><a href="https://git.fhict.nl/I507258/todolistv2">Git firebase CRUD</a></li>
+                <li><a href="https://git.fhict.nl/I507258/php-backend-ai">Git PHP back-end</a></li>
+                <li><a href="https://i507258.hera.fhict.nl/semester3/Spaceweek/versiebeheerPropagandaPoster.pdf">Spaceweek propaganda poster versie beheer</a></li>
+                <li><a href="https://i507258.hera.fhict.nl/semester3/Spaceweek/Backgroundstory%20AU%20Microscopii%20b.pdf">Spaceweek pbackground story</a></li>
               </ul>
             </div>
           </div>
           <div className='dotLine'></div>
           <div className='leeruitkomst'>
             <h1>Transferable production</h1>
-        </div>
+          </div>
         </div>
         {/* Leeruikomst 3 */}
         <div className='containerLeeruitkomst3'>
-        <div className='leeruitkomst'>
+          <div className='leeruitkomst'>
             <h1>Creative iterations</h1>
           </div>
           <div className='dotLine'></div>
@@ -44,7 +48,12 @@ function App() {
             <div className='content_container_margin'>
               <h3>Bewijs:</h3>
               <ul>
-
+                <li><a href="https://i507258.hera.fhict.nl/semester3/Spaceweek/prototype_poster.png">Spaceweek poster</a></li>
+                <li><a href="https://i507258.hera.fhict.nl/semester3/Spaceweek/PropagandaWallPosterV2.png">Spaceweek propaganda poster</a></li>
+                <li><a href="https://i507258.hera.fhict.nl/semester3/Spaceweek/Solution%20Video.mp4">Spaceweek propaganda video</a></li>
+                <li><a href='https://i507258.hera.fhict.nl/semester3/CRUD/Todolist.pdf'>Versie beheer CRUD</a></li>
+                <li><a href="https://i507258.hera.fhict.nl/semester3/CRUD/envFile.pdf">Onderzoek .env bestand in React</a></li>
+                <li><a href='https://i507258.hera.fhict.nl/semester3/Sprint1/Retourneren%20onderzoek.pdf'>Onderzoek Retourneren</a></li>
               </ul>
             </div>
           </div>
@@ -61,7 +70,7 @@ function App() {
           <div className='dotLine'></div>
           <div className='leeruitkomst'>
             <h1>Professional skills</h1>
-          </div>  
+          </div>
         </div>
       </div>
       <div className='ContainerAlleLeeruitkomstenPhone'>
@@ -70,7 +79,7 @@ function App() {
           <div>
             <h2>Bewijs:</h2>
             <ul>
-              <li>Spaceweek</li>
+              <li href="" >Eind product AI paspop</li>
             </ul>
           </div>
         </div>
@@ -78,14 +87,20 @@ function App() {
           <h1>Transferable production</h1>
           <h2>Bewijs:</h2>
           <ul>
-            <li>Spaceweek</li>
+            <li href="https://github.com/MUX-ON-WINDOWS/portofolio-project">Git portofolio</li>
+            <li href="https://git.fhict.nl/I507258/todolistv2">Git firebase CRUD</li>
+            <li href="https://git.fhict.nl/I507258/php-backend-ai">Git PHP back-end</li>
+            <li href="https://i507258.hera.fhict.nl/semester3/Spaceweek/versiebeheerPropagandaPoster.pdf">Spaceweek propaganda poster versie beheer</li>
+            <li href="https://i507258.hera.fhict.nl/semester3/Spaceweek/Backgroundstory%20AU%20Microscopii%20b.pdf">Spaceweek pbackground story</li>
           </ul>
         </div>
         <div className='leeruitkomstPhone'>
           <h1>Creative iterations</h1>
           <h2>Bewijs:</h2>
           <ul>
-            <li>Spaceweek</li>
+            <li href="https://i507258.hera.fhict.nl/semester3/Spaceweek/prototype_poster.png">Spaceweek poster</li>
+            <li href="https://i507258.hera.fhict.nl/semester3/Spaceweek/PropagandaWallPosterV2.png">Spaceweek propaganda poster</li>
+            <li href="https://i507258.hera.fhict.nl/semester3/Spaceweek/Solution%20Video.mp4">Spaceweek propaganda video</li>
           </ul>
         </div>
         <div className='leeruitkomstPhone'>
