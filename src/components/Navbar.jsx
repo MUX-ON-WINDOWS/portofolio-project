@@ -6,25 +6,27 @@ import CRUD from "../content/CRUD";
 import Sprint1 from "../content/Sprint1";
 import Sprint2 from "../content/Sprint2";
 import Sprint3 from "../content/Sprint3";
+import Page404 from "../pages/PageNotfound";
 
 function Navbar() {
-    function openHamburger() {
-        const hamburger = document.querySelector('.hamburgerMenu');
-        const hamburgerContent = document.querySelector('.hamburgerContent');
-        if (hamburger.classList.contains('open')) {
-            hamburger.classList.remove('open');
-            hamburgerContent.classList.remove('open');
-        } else {
-            hamburger.classList.add('open');
-            hamburgerContent.classList.add('open');
-        }
+  function openHamburger() {
+    const hamburger = document.querySelector('.hamburgerMenu');
+    const hamburgerContent = document.querySelector('.hamburgerContent');
+    if (hamburger.classList.contains('open')) {
+      hamburger.classList.remove('open');
+      hamburgerContent.classList.remove('open');
+    } else {
+      hamburger.classList.add('open');
+      hamburgerContent.classList.add('open');
     }
+  }
+
   return (
     <>
       <div className="navContainer">
         <div className="hamburgerMenu" onClick={openHamburger}>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-              <path  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
         </div>
         <NavLink className="navItem" to="/">Home</NavLink>
@@ -44,8 +46,11 @@ function Navbar() {
         <Route path="/Discover" element={<Sprint1 />} />
         <Route path="/Define" element={<Sprint2 />} />
         <Route path="/Develop" element={<Sprint3 />} />
+        {/* Place the PageNotFound route inside Routes */}
+        <Route path="*" element={<Page404 />} />
       </Routes>
     </>
-  )
+  );
 }
+
 export default Navbar;
