@@ -14,7 +14,7 @@ function App() {
             <div className='content_container_margin'>
               <h3>Bewijs:</h3>
               <ul>
-
+                <li href="https://git.fhict.nl/I488863/projectai">Eind product AI paspop</li>
               </ul>
             </div>
           </div>
@@ -64,6 +64,7 @@ function App() {
             <div className='content_container_margin'>
               <h3>Bewijs:</h3>
               <ul>
+                <li><a href='https://fhict.instructure.com/courses/13361/external_tools/1067'>Feedpulse</a></li>
               </ul>
             </div>
           </div>
@@ -79,7 +80,7 @@ function App() {
           <div>
             <h2>Bewijs:</h2>
             <ul>
-              <li href="" >Eind product AI paspop</li>
+              <li href="https://git.fhict.nl/I488863/projectai">Eind product AI paspop</li>
             </ul>
           </div>
         </div>
@@ -107,7 +108,7 @@ function App() {
           <h1>Professional skills</h1>
           <h2>Bewijs:</h2>
           <ul>
-            <li>Spaceweek</li>
+            <li><a href='https://fhict.instructure.com/courses/13361/external_tools/1067'>Feedpulse</a></li>
           </ul>
         </div>
       </div>

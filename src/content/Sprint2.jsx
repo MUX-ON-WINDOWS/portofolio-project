@@ -5,7 +5,7 @@ function App() {
       <div className="textContainer">
         <p>
           Om onze doelgroep beter te begrijpen hebben we een <a href="https://miro.com/welcomeonboard/c0ZIVUZQQVpyUFN5aDNUbnZKWWJBeDh4MG1kcEhpenhGM2ZQdTV2NDg4YzFlYjJqendLVVpXSkxhdkJreDZ2d3wzNDU4NzY0NTY1MTIxMDY0OTAwfDI=?share_link_id=914272353492">Empathy map</a> opgesteld.
-          Uit deze Empathy map hebben we de conclusie getrokken dat onze doelgroep veel spullen terug sturen omdat de maat of kwaliteit niet goed is.
+          Uit deze Empathy map hebben we alle gegevens genoteerd en heb ik de conclusie getrokken dat onze doelgroep veel spullen terug sturen omdat de maat of kwaliteit niet goed is.
           Na het bepalen van onze doelgroep hebben een aantal groepgenoten persona's gemaakt en met een van deze personna's heb ik een <a href="https://i507258.hera.fhict.nl/semester3/Sprint2/Jade CJ.png">customer Journey</a> gemaakt.
           Om meer te weten te komen over de verschillende soorten AI's heb ik een <a href='https://i507258.hera.fhict.nl/semester3/Sprint2/Een Overzicht van Verschillende Soorten Kunstmatige Intelligentie.pdf'>bieb onderzoek</a> gedaan.
           Uit dit onderzoek is gebleken dat er 7 verschillende categorieën AI's zijn, en elke categorie heeft zijn eigen toepassingsgebied en technieken.

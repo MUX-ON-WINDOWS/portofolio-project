@@ -6,6 +6,7 @@
 .ContainerAlleLeeruitkomsten {
     display: block;
     width: 100%;
+    margin-bottom: 50px;
 }
 
 .dotLine {
@@ -19,24 +20,28 @@
     display: flex;
     width: 100%;
     margin-bottom: 20px;
+    min-height: 250px;
 }
 
 .containerLeeruitkomst2 {
     display: flex;
     width: 100%;
     margin-bottom: 20px;
+    min-height: 250px;
 }
 
 .containerLeeruitkomst3 {
     display: flex;
     width: 100%;
     margin-bottom: 20px;
+    min-height: 250px;
 }
 
 .containerLeeruitkomst4 {
     display: flex;
     width: 100%;
     margin-bottom: 20px;
+    min-height: 250px;
 }
 
 /* Bewijslasten */
