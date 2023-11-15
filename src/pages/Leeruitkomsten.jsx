@@ -14,7 +14,7 @@ function App() {
             <div className='content_container_margin'>
               <h3>Bewijs:</h3>
               <ul>
-                <li href="https://git.fhict.nl/I488863/projectai">Eind product AI paspop</li>
+                <li><a href="https://git.fhict.nl/I488863/projectai">Eind product AI paspop</a></li>
               </ul>
             </div>
           </div>
@@ -80,7 +80,7 @@ function App() {
           <div>
             <h2>Bewijs:</h2>
             <ul>
-              <li href="https://git.fhict.nl/I488863/projectai">Eind product AI paspop</li>
+              <li><a href="https://git.fhict.nl/I488863/projectai">Eind product AI paspop</a></li>
             </ul>
           </div>
         </div>

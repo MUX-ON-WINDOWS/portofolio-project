@@ -15,6 +15,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
 /* navbar begin */
 .navContainer {
   font-size: 1.5rem;
@@ -27,12 +28,26 @@
   text-decoration: none;
   color: var(--primary);
 }
+
+@media screen and (max-width: 1200px) {
+  .navContainer {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .nameTextNavbar {
+    display: none;
+  }
+}
+
 .navItem {
   margin-left: 1rem;
   margin-right: 1rem;
   text-decoration: none;
   color: inherit;
 }
+
 .hamburgerMenu {
   display: none;
   height: 30px;
@@ -40,9 +55,11 @@
   stroke: var(--primary);
   stroke-width: 2;
 }
+
 .hamburgerMenu:hover {
   cursor: pointer;
 }
+
 .hamburgerContent {
   height: 200px;
   width: 100%;
@@ -50,25 +67,31 @@
   top: 200px;
   text-align: center;
 }
+
 a.hamburgerContent {
   text-decoration: none;
   color: inherit;
 }
+
 .navHamContainer {
   display: flex;
   padding: 76px;
   flex-direction: column;
 }
+
 .navHamContainer a {
   text-decoration: none;
   color: inherit;
 }
+
 .navHamContainer a:hover {
   color: var(--primary);
 }
+
 .open {
   display: block;
 }
+
 /* navbar einde */
 /* content layout */
 .contentContainer {
@@ -78,29 +101,36 @@ a.hamburgerContent {
   min-height: 90vh;
   padding-bottom: 30px;
 }
+
 .contentContainer h1 {
   padding: 50px;
   text-align: center;
 }
+
 .inleidingContainer {
   margin: auto;
   width: 80%;
 }
+
 .inleidingContainer a {
   text-decoration: none;
   color: blue;
 }
+
 .textContainer {
   margin: auto;
   width: 80%;
 }
+
 .textContainer a {
   text-decoration: none;
   color: blue;
 }
+
 .containerTextImage {
   display: flex;
 }
+
 .containerPoster {
   width: 700px;
 }
@@ -111,13 +141,16 @@ a.hamburgerContent {
     margin-right: 0.5rem;
   }
 }
-@media screen and (max-width: 930px) {
+
+@media screen and (max-width: 1200px) {
   .navItem {
     display: none;
   }
+
   .hamburgerMenu {
     display: block;
   }
+
   .containerPoster {
     display: none;
   }

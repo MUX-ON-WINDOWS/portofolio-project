@@ -24,13 +24,16 @@ function Navbar() {
   return (
     <>
       <div className="navContainer">
+        <h1 className="nameTextNavbar">MAX ARNOUTS</h1>
+        <div>
+          <NavLink className="navItem" to="/">Home</NavLink>
+          <NavLink className="navItem" to="/leeruitkomsten">Leeruitkomsten</NavLink>
+        </div>
         <div className="hamburgerMenu" onClick={openHamburger}>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
             <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
         </div>
-        <NavLink className="navItem" to="/">Home</NavLink>
-        <NavLink className="navItem" to="/leeruitkomsten">Leeruitkomsten</NavLink>
       </div>
       <div className="hamburgerContent">
         <div className="navHamContainer">

@@ -6,12 +6,14 @@
 .containerPhoneScreen {
     display: none;
 }
+
 .containerContent {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
 }
+
 .contentItem {
     display: flex;
     flex-direction: column;
@@ -24,15 +26,18 @@
     border-radius: 25%;
     background-color: #D3AE87;
 }
+
 .contentItem:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
+
 .contentItem img {
     width: 100%;
     height: 200px;
     border-radius: 25%;
 }
+
 .contentItem p {
     /* position: absolute; */
     text-align: center;
@@ -51,6 +56,7 @@
     margin-top: 200px;
     gap: 20px;
 }
+
 .card {
     transition: 0.5s;
     width: 300px;
@@ -59,41 +65,51 @@
     border-radius: 15%;
     background-color: #D3AE87;
 }
+
 .card:hover {
     transition: 0.5s;
     transform: scale(1.1);
     cursor: pointer;
 }
+
 .swiper {
     width: 100%;
     height: 450px !important;
 }
-.swiper-slide { 
+
+.swiper-slide {
     text-align: center;
     font-size: 18px;
     /* background: #fff; */
     width: 300px !important;
 }
+
 .swiper-horizontal {
     width: 90% !important;
     padding-top: 24px !important;
     margin-right: 5% !important;
     margin-left: 5% !important;
 }
-.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     background-color: var(--primary) !important;
 }
+
 .swiper-button-next {
     color: var(--primary) !important;
 }
+
 .swiper-button-prev {
     color: var(--primary) !important;
 }
+
 .card img {
     width: 100%;
     height: 300px;
     border-radius: 25px 25px 0 0;
 }
+
 .card h1 {
     text-align: center;
     font-size: 1.5rem;
@@ -101,6 +117,7 @@
     color: var(--secundary);
     width: 100%;
 }
+
 .name {
     position: absolute;
     font-size: clamp(8rem, 12vw, 20rem);
@@ -108,7 +125,8 @@
     top: 0;
     margin: 0;
     left: 50%;
-    transform: translateX(-50%); /* Center horizontally */
+    transform: translateX(-50%);
+    /* Center horizontally */
     text-align: center;
     z-index: -1;
 }
@@ -120,21 +138,37 @@
     margin-top: 11%;
     z-index: 10 !important;
 }
+
 .ImageContainer {
     display: flex;
 }
+
 .ImageContainer img {
     width: 33%;
 }
+
+.nameTextNavbar {
+    color: white !important;
+    display: none;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
 /* mobile responsive */
-  @media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     .containerWindow {
         display: none;
     }
+
     .containerPhoneScreen {
         display: block;
     }
+
+    .nameTextNavbar {
+        display: block;
+    }
+
     .ImageContainer {
         display: none;
     }
-  }
+}
