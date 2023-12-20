@@ -1,8 +1,33 @@
-# React + Vite
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# TodoList
 
-Currently, two official plugins are available:
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
+* [Live](#live)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## General info
+In this project, I've worked with Firebase in React.js + Vite. I've implemented the CRUD method here. This application is mobile responsive and is a PWA.
+
+## Technologies
+Project is created with:
+* Firebase
+* React.js + Vite
+
+## Setup
+To run this project, install it locally using npm:
+
+```
+$ cd ../TodoList
+$ npm install
+$ npm run dev
+
+```
+## Live
+https://i507258.hera.fhict.nl/semester3/firebase/
